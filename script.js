@@ -13,8 +13,8 @@ function displaySeconds () {
 // A "Start" button to start the stopwatch running.
 const startButton = document.querySelector('#start')
 startButton.onclick = function() {
-   interval =  setInterval(function() {
     startButton.setAttribute('disabled', true)
+    interval = setInterval(function() {
      seconds++ 
      displaySeconds()
     }, 1000);
