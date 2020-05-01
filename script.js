@@ -24,3 +24,9 @@ document.querySelector('#stop').onclick = function() {
  clearInterval(interval)
  startButton.removeAttribute('disabled')
 }
+
+// A "Reset" button to reset the time back to 0
+document.querySelector('#reset').onclick = function() {
+    seconds = 0
+    displaySeconds()
+}
